@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Fotag!</title>
+
+    <!--
+    All of your CSS must go in css/fotag.css. Do not add styles to individual elements.
+    All of your CSS must be your own -- you may not use third-party CSS, like Bootstrap.
+    -->
+    <link rel="stylesheet" href="css/fotag.css"/>
+    <style>
+        .marking-button {
+            float:right;
+        }
+        .marking-div-clear {
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="header">
+        <!-- This header can be replaced -->
+
+        <div id="fotag">
+            <h1>Fotag!</h1>
+            <p id="p_head">Import, organize, and rate your photos!</p>
+        </div>
+
+        <div id="add_tool"></div>
+
+        <div id="add_filter"></div>
+       
+        <div id="add_photo"></div>
+    </div>
+
+<div id="app-container">
+    <!--
+         An attachment point to place all of your dynamically created content. Do not remove or
+         rename this div.
+    -->
+
+    <div style="clear:both"></div>
+
+    <div id="main_content"></div>
+    <div style="clear:both"></div>
+
+    <div id="enlarged"></div>
+    <div style="clear:both"></div>
+
+    <div id="main_content2">
+
+        <!--  Template for images  -->
+        <template id="img">
+             <img class="image" src="" alt="" > 
+            <img class="close" src="icons/0_close_icon.png" alt="close"> 
+        </template>
+
+        <!--  Template for enlaged image  -->
+        <template id="img-larger">
+             <img id="img_enlarge" src="" alt="" >  
+             <p id="text-large">Click to exit </p>
+        </template>
+
+
+        <!--  Template for Rate STARS  -->
+        <template id="stars">
+            <img src="icons/0_star_empty.png" alt="Empty_Star" class="star_icon">
+            <img src="icons/0_star_empty.png" alt="Empty_Star" class="star_icon">
+            <img src="icons/0_star_empty.png" alt="Empty_Star" class="star_icon">
+            <img src="icons/0_star_empty.png" alt="Empty_Star" class="star_icon">
+            <img src="icons/0_star_empty.png" alt="Empty_Star" class="star_icon">
+            <img src="icons/0_clear_left.png" alt="CLEAR" class="clear_icon star_icon">
+        </template>
+
+
+        <!--  Template for view Types: GRID VIEW or LIST VIEW   -->
+        <template id="view_type_temp">
+            <img src="icons/0_grid_black.png" alt="Grid_view" class="icon grid_icon">
+            <img src="icons/0_list_blue.png" alt="List_view" class="icon list_icon">
+        </template>
+
+
+        <!-- A template for a file chooser, to select multiple files. See FileChooser in view.js. -->
+        <template id="file-chooser">
+            <input id="choose-photo" type="file" class="files-input" name="file_results[]" multiple />
+            <output id="list"></output>
+        </template>
+
+    </div>
+
+    <div style="clear:both"></div>
+    
+    <!-- Keep this here so TAs can run your unit tests -->
+    <div id="unit-tests">
+
+        <!-- This button is for marking purposes to test your architecture. Do not remove it-->
+        <button class="marking-button">Mark Me!</button>
+        <div class="marking-div-clear"></div>
+
+        <a href="unit_tests.html">Run Unit Tests</a>
+    </div>
+
+
+</div>
+
+<script src="js/ext/underscore.js"></script>
+<script src="js/model.js"></script>
+<script src="js/view.js"></script>
+<script src="js/fotag.js"></script>
+</body>
+</html>

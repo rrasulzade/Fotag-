@@ -1,0 +1,389 @@
+/* Put any additional CSS here */
+
+
+
+body {
+  background: #E1D1C1;
+  font-family: "Lucida Grande",Arial,Verdana,sans-serif;
+  width: 100%;
+  height: 100%;
+  color: #002F2F;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*******  HEADER STYLE *******/
+#header {
+	width: 98%;
+	position: fixed;
+	padding: 0.2%;
+	border-bottom: solid gray;
+	border-radius: 5px;
+	background: #EBE3E0;
+	z-index: 10;
+	border-style: double;
+}
+
+#fotag{
+	width: 340px;
+	position: relative;
+	float: left;
+}
+#fotag>h1{
+	margin-left: 80px;
+	border-radius: 10px;
+	width: 125px;
+	padding-left: 20px; 
+	border-color: #F9A646;
+	border-style: double; 
+	background-color: #DDE0D2;
+}
+
+#p_head{
+	margin-left: 15px;
+}
+
+#add_photo {
+	color: #403075;
+	background-color: #d1d1d3;
+	border-style: groove;
+	border-radius: 50px;
+	padding: 2.5px 5px; 
+	width: 200px;
+	height: 20px;
+    position: relative;
+    margin-left: 450px;
+    margin-top: 71px;
+}
+#add_photo:hover {
+	border-style: ridge;
+}
+#choose-photo{
+	width: 200px;
+}
+
+#add_tool{
+	position: relative;
+	float: left;
+	padding-left: 0.2%;
+}
+
+#add_filter{
+	float: left;
+	position: fixed;
+	top: 40px;
+	left: 800px;
+
+}
+
+#add_filter>span{
+	padding: 4px;
+	font-size: 28px;
+	width: 90px;
+	position: relative;
+	bottom: 10px;
+}
+
+.icon{
+	width: 40px;
+	height: 40px;
+	padding-top: 15px;
+	
+}
+
+#filter-clear{
+	width: 30px;
+	height: 30px;
+}
+
+	#filterstar1,
+	#filterstar3,
+	#filterstar5,
+	#filterstar7,
+	#filterstar9{
+		width: 42px;
+		height: 42px;
+		clear: both;
+	}
+
+
+.grid_icon{
+	position: relative;
+	left: 75%;
+	padding-left: 45px;
+
+	
+}
+
+.list_icon{
+	position: relative;
+	left: 75%;
+	padding-right: 26px;
+}
+
+
+
+/*******  BODY STYLE  *******/
+#app-container{
+	position: relative;
+	overflow: scroll;
+	top: 130px;
+}
+
+#main_content{
+
+}
+
+#unit-tests {
+  clear: both;
+  position: relative;
+
+  margin: 10px;
+
+}
+
+.marking-button{
+	position: relative;
+	right: 2%;
+	float: left;
+}
+
+.marking-div-clear{
+	float: left;
+	position: relative;
+}
+
+.image {
+    width: 140px;
+    height: 100px;
+    border: 2px solid rgb(255, 195, 121);
+ 	border-radius: 10px;
+}
+
+.image:hover, 
+.close:hover,
+.star_icon:hover,
+.icon:hover,
+#img_enlarge:hover,
+#choose-photo:hover{
+    cursor: pointer;
+}
+
+.img_meta_div{
+	position: relative;
+	left: 3px;
+}
+
+.img_div {
+    position: relative;
+  
+}
+
+.img_name{
+	display: inline;
+
+}
+
+.imgCollection_div{
+	
+}
+
+.imageModel_div{
+	
+	padding: 25px;
+}
+
+.star_div{
+position: relative;
+
+}
+
+.star_icon {
+    width: 25px;
+    height: 25px;
+}
+
+.clear_icon{
+	width: 20px;
+	height: 20px;
+
+}
+
+
+.close{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	left: 130px;
+	display: inline;
+
+}
+
+
+#img_enlarge{
+	width: 640px;
+	height: 400px;
+	position: fixed;
+	  	  border: 2px solid black;
+  	  border-radius: 5px;
+}
+
+#text-large{
+	position: fixed;
+	color: white;
+	background-color: transparent;
+	left: 23.6%;
+	top: 170px;
+	font-size: 24px;
+	font-family: cursive, fantasy;
+	z-index: 100;
+
+}
+
+#enlarged{
+	position: absolute;
+  	top: 186.5px;
+  	left: 30%;
+  	margin-bottom: 100px;
+  	margin-left: -100px;
+  	z-index: 5;
+}
+
+@media screen and (max-width: 1230px) {
+
+	#header {
+		width: 97%;
+	}
+
+	#add_filter{
+		clear: both;
+		position: relative;
+		top: 0px;
+		left: 210px;
+
+	}
+	#app-container{
+		top: 170px;
+	}
+}
+
+
+
+@media screen and (max-width: 760px) {
+
+	#header {
+		width: 95%;
+		height: 250px;
+	}
+
+	#fotag{
+		clear: both;
+		left: 30px;
+	}
+
+	#header>h1{
+
+	}
+
+	#p_head{
+		clear: both;
+	}
+
+	#add_photo {
+		clear: both;
+		position: relative;
+		left: -370px;
+		top: 10px;
+
+	}
+
+	#choose-photo{
+		clear: both;
+	}
+
+	#add_tool{
+		clear: both;
+		left: 40px;
+		bottom: 15px;
+	}
+
+	#add_filter{
+		clear: both;
+		position: relative;
+		left: 60px;
+		top: 0px;
+	}
+
+	#add_filter>span{
+		clear: both;
+		font-size: 20px;
+		width: 9px;
+		position: relative;
+		bottom: 2px;
+	}
+
+	.icon{
+		width: 30px;
+		height: 30px;
+		position: relative;
+		left: 60px;
+	}
+
+	.grid_icon{
+		clear: both;
+	}
+
+	.list_icon{
+		clear: both;
+	}
+
+	#filterstar1,
+	#filterstar3,
+	#filterstar5,
+	#filterstar7,
+	#filterstar9{
+		width: 26px;
+		height: 26px;
+		clear: both;
+
+	}
+
+	#filter-clear{
+		width: 20px;
+		height: 20px;
+	}
+
+/* APP CONTENT */ 
+	#app-container{
+		top: 250px;
+	}
+
+	#enlarged{
+		top: 276.5px;
+	}
+
+	#img_enlarge{
+		width: 360px;
+		height: 240px;
+	}
+
+	#text-large{
+		top: 270px;
+		left: 18%;
+		font-size: 16px;
+	}
+
+	.img_div {
+		float: 'none';
+		clear: 'both';
+	}
+	.img_meta_div{
+		float: 'none';
+		clear: 'both';
+	}
+    .imageModel_div{
+    	float: 'left';
+    	clear: 'none';
+    }
+}
+
